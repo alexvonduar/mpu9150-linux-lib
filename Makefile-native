@@ -3,7 +3,7 @@
 #
 
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -Wall -fsingle-precision-constant
 
 # add -DI2C_DEBUG for debugging
 DEFS = -DEMPL_TARGET_LINUX -DMPU9150 -DAK8975_SECONDARY
