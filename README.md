@@ -90,6 +90,9 @@ For example:
         /oe1/sysroots/`uname -m`-linux/usr/bin/armv7a-vfp-neon-poky-linux-gnueabi/arm-poky-linux-gnueabi-gcc -Wall inv_mpu.o inv_mpu_dmp_motion_driver.o linux_glue.o mpu9150.o quaternion.o vector3d.o imucal.o -lm -o imucal
 
 
+If you are using a <strong>hard-floating point</strong> built cross-toolchain, then comment/uncomment 
+the appropriate <code>CC</code> and <code>CFLAGS</code> lines in <code>Makefile-cross</code>.
+
 ### local_defaults.h
 
 You can modify some default parameter settings in <code>local_defaults.h</code> to avoid
