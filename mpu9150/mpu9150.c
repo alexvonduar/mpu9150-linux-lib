@@ -290,7 +290,7 @@ int data_ready()
 	//if (status != 0x0103)
 	//	fprintf(stderr, "%04X\n", status);
 
-	return (status == 0x0103);
+	return (status == (MPU_INT_STATUS_DATA_READY | MPU_INT_STATUS_DMP | MPU_INT_STATUS_DMP_0));
 }
 
 void calibrate_data(mpudata_t *mpu)
