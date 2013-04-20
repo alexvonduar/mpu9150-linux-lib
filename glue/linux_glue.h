@@ -29,6 +29,9 @@
 #include <math.h>
 #include "inv_mpu.h"
 
+#define MIN_I2C_BUS 0
+#define MAX_I2C_BUS 7
+
 static inline int reg_int_cb(struct int_param_s *int_param)
 {
 	return 0;

@@ -56,14 +56,20 @@ int mpu9150_init(int i2c_bus, int sample_rate, int mix_factor)
                                         0, 1, 0,
                                         0, 0, 1 };
 
-	if (i2c_bus < 0 || i2c_bus > 3)
+	if (i2c_bus < MIN_I2C_BUS || i2c_bus > MAX_I2C_BUS) {
+		printf("Invalid I2C bus %d\n", i2c_bus);
 		return -1;
+	}
 
-	if (sample_rate < 2 || sample_rate > 50)
+	if (sample_rate < 2 || sample_rate > 50) {
+		printf("Invalid sample rate %d\n", sample_rate);
 		return -1;
+	}
 
-	if (mix_factor < 0 || mix_factor > 100)
+	if (mix_factor < 0 || mix_factor > 100) {
+		printf("Invalid mag mixing factor %d\n", mix_factor);
 		return -1;
+	}
 
 	yaw_mixing_factor = mix_factor;
 

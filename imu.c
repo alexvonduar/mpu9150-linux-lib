@@ -82,7 +82,7 @@ int main(int argc, char **argv)
 			if (errno == EINVAL)
 				usage(argv[0]);
 			
-			if (i2c_bus < 0 || i2c_bus > 5)
+			if (i2c_bus < MIN_I2C_BUS || i2c_bus > MAX_I2C_BUS)
 				usage(argv[0]);
 
 			break;
