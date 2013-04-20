@@ -2,3 +2,4 @@ imu
 Makefile
 *.o
 imucal
+*~
