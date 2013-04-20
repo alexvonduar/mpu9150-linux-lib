@@ -29,6 +29,17 @@
 #define MAG_SENSOR_RANGE 	4096
 #define ACCEL_SENSOR_RANGE 	32000
 
+// Somewhat arbitrary limits here. The values are samples per second.
+// The MIN comes from the way we are timing our loop in imu and imucal.
+// That's easily worked around, but no one probably cares.
+// The MAX comes from the compass. This could be avoided with separate
+// sample rates for the compass and the accel/gyros which can handle 
+// faster sampling rates. This is a TODO item to see if it's useful. 
+// There are some practical limits on the speed that come from a 'userland'
+// implementation like this as opposed to a kernel or 'bare-metal' driver.
+#define MIN_SAMPLE_RATE 2
+#define MAX_SAMPLE_RATE 100
+
 typedef struct {
 	short offset[3];
 	short range[3];

@@ -61,7 +61,7 @@ int mpu9150_init(int i2c_bus, int sample_rate, int mix_factor)
 		return -1;
 	}
 
-	if (sample_rate < 2 || sample_rate > 50) {
+	if (sample_rate < MIN_SAMPLE_RATE || sample_rate > MAX_SAMPLE_RATE) {
 		printf("Invalid sample rate %d\n", sample_rate);
 		return -1;
 	}

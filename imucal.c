@@ -95,7 +95,7 @@ int main(int argc, char **argv)
 			if (errno == EINVAL)
 				usage(argv[0]);
 			
-			if (sample_rate < 2 || sample_rate > 50)
+			if (sample_rate < MIN_SAMPLE_RATE || sample_rate > MAX_SAMPLE_RATE)
 				usage(argv[0]);
 
 			break;
