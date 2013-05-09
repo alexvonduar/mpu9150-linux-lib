@@ -147,7 +147,7 @@ Create a file:
 
 and add the line:
 
-        KERNEL=="i2c-[0-3]",MODE="0666"
+        KERNEL=="i2c-[0-7]",MODE="0666"
 
 
 Reboot to make sure everything is set correctly.
