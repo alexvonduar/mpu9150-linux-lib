@@ -26,14 +26,44 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>I2Cdev</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>eMPL</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>mpu9150</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<name>I2Cdev/ArduinoWrapper.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/i2cdevlib/MSP430/I2Cdev/ArduinoWrapper.h</locationURI>
+		</link>
+		<link>
+			<name>I2Cdev/I2Cdev.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/i2cdevlib/MSP430/I2Cdev/I2Cdev.cpp</locationURI>
+		</link>
+		<link>
+			<name>I2Cdev/I2Cdev.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/i2cdevlib/MSP430/I2Cdev/I2Cdev.h</locationURI>
+		</link>
+		<link>
+			<name>I2Cdev/keywords.txt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/i2cdevlib/MSP430/I2Cdev/keywords.txt</locationURI>
+		</link>
+		<link>
+			<name>I2Cdev/msp430_i2c.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/i2cdevlib/MSP430/I2Cdev/msp430_i2c.c</locationURI>
+		</link>
+		<link>
+			<name>I2Cdev/msp430_i2c.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/i2cdevlib/MSP430/I2Cdev/msp430_i2c.h</locationURI>
 		</link>
 		<link>
 			<name>eMPL/README.md</name>
@@ -69,36 +99,6 @@
 			<name>eMPL/inv_mpu_dmp_motion_driver.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/eMPL/inv_mpu_dmp_motion_driver.h</locationURI>
-		</link>
-		<link>
-			<name>mpu9150/mpu9150.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/mpu9150/mpu9150.c</locationURI>
-		</link>
-		<link>
-			<name>mpu9150/mpu9150.h</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/mpu9150/mpu9150.h</locationURI>
-		</link>
-		<link>
-			<name>mpu9150/quaternion.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/mpu9150/quaternion.c</locationURI>
-		</link>
-		<link>
-			<name>mpu9150/quaternion.h</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/mpu9150/quaternion.h</locationURI>
-		</link>
-		<link>
-			<name>mpu9150/vector3d.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/mpu9150/vector3d.c</locationURI>
-		</link>
-		<link>
-			<name>mpu9150/vector3d.h</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/mpu9150/vector3d.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
